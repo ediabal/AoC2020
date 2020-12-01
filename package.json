@@ -1,0 +1,23 @@
+{
+  "name": "advent-of-code-2020",
+  "version": "0.0.1",
+  "description": "Advent Of Code 2020",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ediabal/AoC2020.git"
+  },
+  "author": "logan.wholey",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ediabal/AoC2020/issues"
+  },
+  "homepage": "https://github.com/ediabal/AoC2020#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0"
+  }
+}
