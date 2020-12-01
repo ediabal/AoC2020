@@ -1,5 +1,5 @@
+require('../config');
 const fs = require('fs');
-require('dotenv').config();
 
 module.exports = function read(path) {
   try {
