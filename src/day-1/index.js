@@ -48,7 +48,7 @@ function findThreeNumbersThatSumAndMultiply(input, sum) {
 
 module.exports = function reportRepair(sum = 2020) {
   try {
-    const input = read('day-1/INPUT.md').trim().split('\n');
+    const input = read('src/day-1/INPUT.md').trim().split('\n');
     return {
       'part-1': findTwoNumbersThatSumAndMultiply(input, sum),
       'part-2': findThreeNumbersThatSumAndMultiply(input, sum),
