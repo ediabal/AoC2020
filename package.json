@@ -2,7 +2,7 @@
   "name": "advent-of-code-2020",
   "version": "0.0.1",
   "description": "Advent Of Code 2020",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
     "start": "node src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -13,6 +13,7 @@
   },
   "author": "logan.wholey",
   "license": "ISC",
+  "type": "module",
   "bugs": {
     "url": "https://github.com/ediabal/AoC2020/issues"
   },

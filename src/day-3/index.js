@@ -1,6 +1,6 @@
-const read = require('../utils/read');
+import { read, log } from '../utils/io.js';
 
-function numberOfTreesEncounteredR3D1(input) {
+export function numberOfTreesEncounteredR3D1(input) {
   let position = 0;
   let count = 0;
   input.forEach((row) => {
@@ -10,7 +10,7 @@ function numberOfTreesEncounteredR3D1(input) {
   return count;
 }
 
-function numberOfTreesEncounteredForMultipleSlopes(input) {
+export function numberOfTreesEncounteredForMultipleSlopes(input) {
   // Right 1, down 1.
   // Right 3, down 1. (This is the slope you already checked.)
   // Right 5, down 1.
@@ -39,14 +39,15 @@ function numberOfTreesEncounteredForMultipleSlopes(input) {
   return product;
 }
 
-module.exports = function tobogganTrajectory() {
+export default function tobogganTrajectory() {
   try {
-    const input = read('src/day-3/INPUT.md').trim().split('\n');
-    return {
-      'part-1': numberOfTreesEncounteredR3D1(input),
-      'part-2': numberOfTreesEncounteredForMultipleSlopes(input),
-    };
+    const input = read('src/day-3/INPUT.txt').trim().split('\n');
+    log(
+      3,
+      numberOfTreesEncounteredR3D1(input),
+      numberOfTreesEncounteredForMultipleSlopes(input)
+    );
   } catch (err) {
     console.error(err);
   }
-};
+}
