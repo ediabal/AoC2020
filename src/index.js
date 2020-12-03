@@ -1,5 +1,7 @@
-const day1 = require('./day-1');
-const day2 = require('./day-2');
+const reportRepair = require('./day-1');
+const passwordPhilosophy = require('./day-2');
+const day3 = require('./day-3');
 
-// console.log(day1());
-console.log(day2());
+// console.log(reportRepair());
+// console.log(passwordPhilosophy());
+console.log(day3());

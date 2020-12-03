@@ -53,7 +53,7 @@ function numberOfValidPasswordsAtPosition(input) {
   }, 0);
 }
 
-module.exports = function something() {
+module.exports = function passwordPhilosophy() {
   try {
     const input = read('src/day-2/INPUT.md').trim().split('\n');
     const formattedInput = formatInput(input);
