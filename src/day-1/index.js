@@ -1,6 +1,6 @@
-const read = require('../utils/read');
+import { read, log } from '../utils/io.js';
 
-function findTwoNumbersThatSumAndMultiply(input, sum) {
+export function findTwoNumbersThatSumAndMultiply(input, sum) {
   const map = input.reduce((acc, num, i) => {
     acc[num] = i + 1;
     return acc;
@@ -20,7 +20,7 @@ function findTwoNumbersThatSumAndMultiply(input, sum) {
   return product;
 }
 
-function findThreeNumbersThatSumAndMultiply(input, sum) {
+export function findThreeNumbersThatSumAndMultiply(input, sum) {
   let product;
 
   for (let i = 0; i < input.length; i++) {
@@ -46,14 +46,15 @@ function findThreeNumbersThatSumAndMultiply(input, sum) {
   return product;
 }
 
-module.exports = function reportRepair(sum = 2020) {
+export default function reportRepair(sum = 2020) {
   try {
-    const input = read('src/day-1/INPUT.md').trim().split('\n');
-    return {
-      'part-1': findTwoNumbersThatSumAndMultiply(input, sum),
-      'part-2': findThreeNumbersThatSumAndMultiply(input, sum),
-    };
+    const input = read('src/day-1/INPUT.txt').trim().split('\n');
+    log(
+      1,
+      findTwoNumbersThatSumAndMultiply(input, sum),
+      findThreeNumbersThatSumAndMultiply(input, sum)
+    );
   } catch (err) {
     console.error(err);
   }
-};
+}

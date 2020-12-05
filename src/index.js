@@ -1,7 +1,9 @@
-const reportRepair = require('./day-1');
-const passwordPhilosophy = require('./day-2');
-const day3 = require('./day-3');
+import reportRepair from './day-1/index.js';
+import passwordPhilosophy from './day-2/index.js';
+import tobogganTrajectory from './day-3/index.js';
+import day4 from './day-4/index.js';
 
-// console.log(reportRepair());
-// console.log(passwordPhilosophy());
-console.log(day3());
+// reportRepair();
+// passwordPhilosophy();
+// tobogganTrajectory();
+day4();
