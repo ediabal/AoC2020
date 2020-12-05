@@ -116,7 +116,7 @@ export function p2(input) {
   return validPassports;
 }
 
-export default function day4() {
+export default function passportProcessing() {
   try {
     const input = read('src/day-4/INPUT.txt').trim();
     const formattedInput = formatInput(input);
