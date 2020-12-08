@@ -5,6 +5,7 @@ import passportProcessing from './day-4/index.js';
 import binaryBoarding from './day-5/index.js';
 import customCustoms from './day-6/index.js';
 import handyHaversacks from './day-7/index.js';
+import handheldHalting from './day-8/index.js';
 
 // reportRepair();
 // passwordPhilosophy();
@@ -13,3 +14,4 @@ import handyHaversacks from './day-7/index.js';
 // binaryBoarding();
 // customCustoms();
 // handyHaversacks();
+// handheldHalting();
