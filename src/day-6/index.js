@@ -23,7 +23,7 @@ export default function customCustoms() {
     const input = read('src/day-6/INPUT.txt').trim().split('\n\n');
     const formattedInput = formatInput(input);
     log(
-      'day',
+      6,
       findSumOfUnionsInGroups(formattedInput),
       findSumOfIntersectionInGroups(formattedInput)
     );
