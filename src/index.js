@@ -6,6 +6,7 @@ import binaryBoarding from './day-5/index.js';
 import customCustoms from './day-6/index.js';
 import handyHaversacks from './day-7/index.js';
 import handheldHalting from './day-8/index.js';
+import encodingError from './day-9/index.js';
 
 // reportRepair();
 // passwordPhilosophy();
@@ -15,3 +16,4 @@ import handheldHalting from './day-8/index.js';
 // customCustoms();
 // handyHaversacks();
 // handheldHalting();
+// encodingError();
