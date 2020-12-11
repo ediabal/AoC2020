@@ -11,7 +11,7 @@ export function findNumNotInSum(nums) {
     let notInSum = true;
     for (let j = 0; j < prev25.length; j++) {
       let comp = sum - prev25[j];
-      if (prev25.indexOf(comp) !== -1) {
+      if (prev25.indexOf(comp) !== -1 && prev25.indexOf(comp) !== j) {
         notInSum = false;
       }
     }

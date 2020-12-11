@@ -7,6 +7,7 @@ import customCustoms from './day-6/index.js';
 import handyHaversacks from './day-7/index.js';
 import handheldHalting from './day-8/index.js';
 import encodingError from './day-9/index.js';
+import adapterArray from './day-10/index.js';
 
 // reportRepair();
 // passwordPhilosophy();
@@ -17,3 +18,4 @@ import encodingError from './day-9/index.js';
 // handyHaversacks();
 // handheldHalting();
 // encodingError();
+// adapterArray();
